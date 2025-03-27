@@ -188,4 +188,202 @@ body {
   footer .social-links a:hover {
     color: #f39c12;
   }
-  
+  /* Banner container para el fondo gris */
+/* Banner container para el fondo gris */
+.banner-container {
+  position: relative;
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo gris opaco */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Sombras para el texto */
+  text-align: center;
+}
+
+.banner-overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.banner-overlay p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.cta-button {
+  background-color: #d32f2f;  /* Rojo */
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #c62828; /* Rojo oscuro */
+}
+
+/* Estilo para la Sección "Sobre Nosotros" */
+#about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px); /* Efecto hover */
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.about-img {
+  width: 300px;
+  height: 300px; /* Imagen cuadrada */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #d32f2f;
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card {
+    width: 90%;
+  }
+
+  .about-img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+/* Estilo general para la sección de contacto */
+#contacto {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#contacto h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #d32f2f; /* Color llamativo */
+}
+
+/* Estilo para la card de contacto */
+.contact-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px; /* Limitar el tamaño máximo de la card */
+  padding: 30px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de hover para la card */
+.contact-card:hover {
+  transform: translateY(-10px); /* Card se eleva cuando se pasa el mouse */
+}
+
+/* Estilos para los campos del formulario */
+.contact-card label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #555;
+  display: block;
+}
+
+.contact-card input, .contact-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-card textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Estilo para el botón */
+.contact-card button {
+  background-color: #d32f2f; /* Rojo atractivo */
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-card button:hover {
+  background-color: #c62828; /* Rojo oscuro al pasar el mouse */
+}
